@@ -20,7 +20,7 @@
 
   var changeOption = function () {
     roomNumber.setCustomValidity('');
-    if ((roomNumber.value > 3) & (capacity.value > 0)) {
+    if ((roomNumber.value > 3) && (capacity.value > 0)) {
       roomNumber.setCustomValidity('100 комнат не для гостей!');
     } else if (roomNumber.value < capacity.value) {
       roomNumber.setCustomValidity('Не хватает комнат для такого количества гостей');
